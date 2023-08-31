@@ -1,4 +1,7 @@
-﻿using System;
+# Challenge project - Create a mini-game
+
+```c#
+using System;
 
 Random random = new Random();
 Console.CursorVisible = false;
@@ -118,16 +121,16 @@ void Move(int speed = 1, bool otherKeysExit = false)
         case ConsoleKey.UpArrow:
             playerY--; 
             break;
-		case ConsoleKey.DownArrow: 
+  case ConsoleKey.DownArrow: 
             playerY++; 
             break;
-		case ConsoleKey.LeftArrow:  
+  case ConsoleKey.LeftArrow:  
             playerX -= speed; 
             break;
-		case ConsoleKey.RightArrow: 
+  case ConsoleKey.RightArrow: 
             playerX += speed; 
             break;
-		case ConsoleKey.Escape:     
+  case ConsoleKey.Escape:     
             shouldExit = true; 
             break;
         default:
@@ -160,3 +163,4 @@ void InitializeGame()
     Console.SetCursorPosition(0, 0);
     Console.Write(player);
 }
+```
